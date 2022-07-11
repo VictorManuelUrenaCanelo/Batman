@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/*LoadScreen*/
+
+.content2 .Container {
+    background-color: #0B0C10;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadMessage {
+    background-color: #1F2833;
+    color: #fff;
+    width: 700px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: open-close 6s;
+    overflow: hidden;
+}
+
+.loadText {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    margin-left: 25px;
+    animation: textAppearing 1s;
+}
+
+.dotsCase{
+    animation: dotsAppearing 2s;
+}
+
+.dots {
+    letter-spacing: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.dotsCase .dots:nth-last-child(3) {
+    animation: dotsAnimation1 0.6s 0.1s linear infinite;
+}
+
+.dotsCase .dots:nth-last-child(2) {
+    animation: dotsAnimation2 0.6s 0.2s linear infinite;
+}
+
+.dotsCase .dots:nth-last-child(1) {
+    animation: dotsAnimation3 0.6s 0.3s linear infinite;
+}
+
+@keyframes open-close {
+    0% {
+        height: 0px;
+    }
+
+    20% {
+        height: 300px;
+    }
+
+    60% {
+        height: 300px;
+    }
+
+    80% {
+        height: 0px;
+    }
+
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes textAppearing {
+    0% {
+        opacity: 0;
+        letter-spacing: 0;
+    }
+
+    50% {
+        opacity: 0;
+        letter-spacing: 0;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: 3px;
+    }
+}
+
+@keyframes dotsAppearing {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dotsAnimation1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes dotsAnimation2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes dotsAnimation3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/*MainMenu*/
+
+.content3Inv {
+    display: none;
+}
+
+.content3 .mainContainer {
+    /*background-color: #0B0C10;*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
