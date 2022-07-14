@@ -157,11 +157,151 @@
 }
 
 .content3 .mainContainer {
-    /*background-color: #0B0C10;*/
+    background-color: #0B0C10;
     width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/*First Column*/
+.columns:nth-child(1){
+    width: 33.39%;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.columns:nth-child(1) .options{
+    background-color: #1F2833;
+    width: 90%;
+    height: 100px;
+    border-radius: 0 50px 50px 0px;
+    text-align: center;
+    transition: 0.3s;
+    float: left;
+    animation: optionsAppearing 1s;
+}
+
+.columns:nth-child(1) .options:hover{
+    width: 100%;
+    cursor: pointer;
+}
+
+.columns:nth-child(1) .options:hover p{
+    color: cyan;
+}
+
+.columns:nth-child(1) .options p{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    animation: textAppearing 1s;
+    line-height: 23px;
+    color: #fff;
+}
+
+/*Second Column*/
+.columns:nth-child(2){
+    width: 33.39%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.content3 .mainContainer .batLogo{
+    background-color: #1F2833;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    animation: optionsAppearing 1s;
+    transition: 0.3s;
+}
+
+.content3 .mainContainer .batLogo:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.content3 .mainContainer .batLogo img{
+    width: 100%;
+    animation: batLogoAppearing 1.5s;
+}
+
+/*Third Column*/
+.columns:nth-child(3){
+    width: 33.39%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+
+.columns:nth-child(3) .options{
+    background-color: #1F2833;
+    width: 90%;
+    height: 100px;
+    border-radius: 50px 0px 0px 50px;
+    text-align: center;
+    transition: 0.3s;
+    animation: optionsAppearing 1s;
+}
+
+.columns:nth-child(3) .options:hover{
+    width: 100%;
+    cursor: pointer;
+}
+
+.columns:nth-child(3) .options:hover p{
+    color: cyan;
+}
+
+.columns:nth-child(3) .options p{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    animation: textAppearing 1s;
+    line-height: 23px;
+    color: #fff;
+}
+
+/*Animation for the main menu*/
+@keyframes optionsAppearing {
+    0% {
+        opacity: 0;
+        width:  0;
+    }
+
+    50% {
+        opacity: 0;
+        width:  0;
+    }
+
+    100% {
+        opacity: 1;
+        width:  90%;
+    }
+}
+
+/*Animation for the batLogo*/
+@keyframes batLogoAppearing {
+    0% {
+        opacity: 1;
+        width:  1000px;
+    }
+
+    50% {
+        opacity: 1;
+        width:  1000px;
+    }
+
+    100% {
+        opacity: 1;
+        width:  90%;
+    }
+}
