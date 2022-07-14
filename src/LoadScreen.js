@@ -1,19 +1,15 @@
 import { Component } from "react";
 import './LoadScreen.css';
+import batLogo from './batlogo.png';
 
 export default class LoadScreen extends Component {
 
     render() {
 
         setTimeout(function () {
-            document.getElementById("content2").innerHTML = '';
+            document.getElementById("content2").innerHTML = ``;
             document.getElementById("content3").classList.remove('content3Inv');
         }, 6000)
-
-        function showInfo(){
-            const secondColumn = document.getElementById('secondColumn');
-            secondColumn.innerHTML = '';
-        }
 
         return (
             <div id="content1">
@@ -28,7 +24,7 @@ export default class LoadScreen extends Component {
                     <div className="mainContainer">
 
                         <div className="columns" id="firstColumn">
-                            <div className="options" onClick={showInfo()}>
+                            <div className="options">
                                 <p>Batmobil</p>
                             </div>
                             <div className="options">
@@ -41,7 +37,7 @@ export default class LoadScreen extends Component {
 
                         <div className="columns"  id="secondColumn">
                             <div className="batLogo">
-                                <img src="batlogo.png"/>
+                                <img src={batLogo}/>
                             </div>
                         </div>
 
